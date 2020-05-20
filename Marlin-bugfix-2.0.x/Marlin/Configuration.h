@@ -128,15 +128,15 @@
 
 // Choose the name from boards.h that matches your setup
 #ifndef MOTHERBOARD
-  #define MOTHERBOARD BOARD_BTT_SKR_V1_1
+  #define MOTHERBOARD BOARD_BTT_SKR_V1_3
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "Hypercube Evolution"
+#define CUSTOM_MACHINE_NAME "BigBoy"
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like http://www.uuidgenerator.net/version4
-#define MACHINE_UUID "f2a0088a-241a-496e-8096-db1722566a01"
+#define MACHINE_UUID "6b561a27-2b98-448d-a0ad-16cbf971c4d0"
 
 // @section extruder
 
@@ -972,7 +972,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { 42, 5, 0 }
+#define NOZZLE_TO_PROBE_OFFSET { 65, -5, 0 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1108,8 +1108,8 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 200
-#define Y_BED_SIZE 200
+#define X_BED_SIZE 300
+#define Y_BED_SIZE 300
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
@@ -1117,7 +1117,7 @@
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
-#define Z_MAX_POS 200
+#define Z_MAX_POS 300
 
 /**
  * Software Endstops
